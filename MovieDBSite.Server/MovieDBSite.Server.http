@@ -1,0 +1,6 @@
+@MovieDBSite.Server_HostAddress = http://localhost:5245
+
+GET {{MovieDBSite.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
