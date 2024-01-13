@@ -8,10 +8,13 @@ namespace MovieDBSite.Server.Controllers
 	[ApiController]
 	public class UsersController : ControllerBase
 	{
+		//Do I put all the gets/posts for the user here?
+
 		//For testing purposes only
 		private readonly User _sampleUser = new User { Username = "demo", Password = "password" };
 
 		[HttpPost("login")]
+		//Accesses the body?
 		public ActionResult<string> Login([FromBody] User user)
 		{
 			if (user.Username == _sampleUser.Username && user.Password == _sampleUser.Password)
